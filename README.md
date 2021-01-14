@@ -39,6 +39,7 @@ None
 -----------------------
 ## Built with
 
+- Bulma
 - jQuery
 - Javascript
 - HTML
