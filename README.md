@@ -20,6 +20,7 @@
 
 -----------------------
 ## Deployed Link
+https://akhalid88.github.io/port-of-folio/
 
 -----------------------
 ## How to Start
