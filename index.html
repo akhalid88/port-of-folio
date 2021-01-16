@@ -18,7 +18,7 @@
 	<script async src="script.js" type="text/javascript"></script>
 
 	<!-- CSS -->
-	<script src="style.css"></script>
+	<link rel="stylesheet" href="assets/style.css">
 
 	<!-- Favicon -->
 	<link rel="icon" href="assets/favicon.ico" type="image/png" />
@@ -95,80 +95,102 @@
 	<!-- Portfolio -->
 	<section class="section is-medium has-background-info-dark" id="portfolio">
 		<div class="section-heading has-text-centered">
-			<h2 class="title is-3">Portfolio</h2>
 			<div class="container">
-				<div class="tile is-ancestor">
-
-					<!-- Card 1 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/c19tracker.png" alt="covid19 tracker">
-								</figure>
-							</div>
+				<h2 class="title is-3">Portfolio</h2>
+				<div class="columns">
+					<!-- Portfolio #1 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/c19tracker.png" alt="covid19 tracker">
+									</figure>
+								</div>
 								<p class="subtitle">COVID-19 Tracker</p>
 								<p class="content">Get data on COVID-19 for a given state and nearby testing locations. Utilizes Web
-									APIs, ChartJS, Bulma CSS, and teamwork.
+									APIs, ChartJS, Bulma CSS, and teamwork.</p>
+							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/COVID-19-Tracker" target="_blank">View on GitHub</a>
+									</span>
 								</p>
-								<footer class="card-footer has-background-white">
-									<a class="card-footer-item" href="https://github.com/akhalid88/COVID-19-Tracker" target="_blank">
-										<span class="icon"><i class="fab fa-github fa-3x"></i></span>
-									</a>
-								</footer>
-							</div>
-
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/COVID-19-Tracker" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
+					</div>
 
-					<!-- Card 2 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/weatherdash.png" alt="weather dashboard">
-								</figure>
-							</div>
+					<!-- Portfolio #2 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/weatherdash.png" alt="weather dashboard">
+									</figure>
+								</div>
 								<p class="subtitle">Weather Dashboard</p>
 								<p class="content">Search weather conditions for your location. Includes 5-day forecast. Utilizes Web
-									APIs, dynamic HTML generation, and local storage.
+									APIs, dynamic HTML generation, and local storage.</p>
+							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/weather-dashboard" target="_blank">View on GitHub</a>
+									</span>
 								</p>
-								<footer class="card-footer has-background-white">
-									<a class="card-footer-item" href="https://github.com/akhalid88/weather-forecast" target="_blank">
-										<span class="icon"><i class="fab fa-github fa-3x"></i></span>
-									</a>
-								</footer>
-							</div>
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/weather-dashboard" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
+					</div>
 
-					<!-- Card 3 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/pwgen.png" alt="password generator">
-								</figure>
-							</div>
+					<!-- Portfolio #3 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/pwgen.png" alt="password generator">
+									</figure>
+								</div>
 								<p class="subtitle">Password Generator</p>
-								<p class="content">Select criteria and create secure password. Utilizes Javascript.
-								</p>
-								<footer class="card-footer has-background-white">
-									<a class="card-footer-item" href="https://github.com/akhalid88/secure-password-generator" target="_blank">
-										<span class="icon"><i class="fab fa-github fa-3x"></i></span>
-									</a>
-								</footer>
+								<p class="content">Select criteria and create secure password. Utilizes Javascript.<br><br> </p>
 							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/secure-password-generator" target="_blank">View on GitHub</a>
+									</span>
+								</p>
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/secure-password-generator" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
-
+					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
+
+	<!-- TEST CODE -->
+
+
+	<!-- END TEST CODE -->
+
 
 	<!-- Resume -->
 	<section class="section is-medium" id="resume">
@@ -203,7 +225,7 @@
 								<i class="far fa-envelope"></i>
 							</span>
 							Email:
-							<a>akhalid.code@gmail.com</a>
+							<a href="mailto:akhalid.code@gmail.com">akhalid.code@gmail.com</a>
 						</p>
 					</div>
 				</div>
