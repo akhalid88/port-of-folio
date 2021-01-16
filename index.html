@@ -4,14 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Bulma CSS Framework -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
 	<!-- Font Awesome icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- Javascript -->
 	<script async src="script.js" type="text/javascript"></script>
+
+	<!-- CSS -->
+	<script src="style.css"></script>
+
 	<!-- Favicon -->
 	<link rel="icon" href="assets/favicon.ico" type="image/png" />
 	<title>Muhammad A Khalid</title>
@@ -26,6 +34,7 @@
 			<span></span>
 			<span></span>
 		</div>
+
 		<!-- Navbar Options -->
 		<div class="navbar-menu has-background-dark" id="navbarMenuItems">
 			<div class="navbar-end">
@@ -66,7 +75,7 @@
 			<div class="level">
 				<div class="level-item level-left">
 					<figure class="image">
-						<img src="assets/about-archery.jpg">
+						<img src="assets/profile2.png">
 					</figure>
 				</div>
 				<div class="level-item level-right">
@@ -87,52 +96,60 @@
 	<section class="section is-medium has-background-info-dark" id="portfolio">
 		<div class="section-heading has-text-centered">
 			<h2 class="title is-3">Portfolio</h2>
-			<div class="tile is-ancestor">
-				<!-- Card 1 -->
-				<div class="tile is-parent">
-					<article class="tile is-child card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://via.placeholder.com/150" alt="placeholder">
-							</figure>
-						</div>
-						<div class="card-content">
-							<p class="subtitle">Portfolio #1</p>
-							<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
-								mauris.
-							</p>
-						</div>
-					</article>
-				</div>
-				<!-- Card 2 -->
-				<div class="tile is-parent">
-					<article class="tile is-child card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://via.placeholder.com/150" alt="placeholder">
-							</figure>
-						</div>
-						<div class="card-content">
-							<p class="subtitle">Portfolio #2</p>
-							<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-							</p>
+			<div class="container">
+				<div class="tile is-ancestor">
+
+					<!-- Card 1 -->
+					<article class="tile is-parent">
+						<div class="tile is-child card has-background-success">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<img src="assets/c19tracker.png" alt="covid19 tracker">
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="subtitle">COVID-19 Tracker</p>
+								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+									mauris.
+								</p>
+							</div>
 						</div>
 					</article>
-				</div>
-				<!-- Card 3 -->
-				<div class="tile is-parent">
-					<article class="tile is-child card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://via.placeholder.com/150" alt="placeholder">
-							</figure>
-						</div>
-						<div class="card-content">
-							<p class="subtitle">Portfolio #3</p>
-							<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-							</p>
+
+					<!-- Card 2 -->
+					<article class="tile is-parent">
+						<div class="tile is-child card has-background-success">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<img src="assets/weatherdash.png" alt="weather dashboard">
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="subtitle">Weather Dashboard</p>
+								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+									mauris.
+								</p>
+							</div>
 						</div>
 					</article>
+
+					<!-- Card 3 -->
+					<article class="tile is-parent">
+						<div class="tile is-child card has-background-success">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<img src="assets/pwgen.png" alt="password generator">
+								</figure>
+							</div>
+							<div class="card-content">
+								<p class="subtitle">Password Generator</p>
+								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+									mauris.
+								</p>
+							</div>
+						</div>
+					</article>
+
 				</div>
 			</div>
 		</div>
@@ -142,8 +159,8 @@
 	<section class="section is-medium" id="resume">
 		<div class="section-heading has-text-centered">
 			<h2 class="title is-3">Resume</h2>
+
 			<!-- Download button -->
-			<!-- <div> -->
 			<a href="assets/Muhammad_A_Khalid_resume.pdf" download>
 				<button class="button is-success is-large is-rounded">
 					<span class="icon">
@@ -152,7 +169,6 @@
 					<span>Download resume</span>
 				</button>
 			</a>
-			<!-- </div> -->
 		</div>
 	</section>
 
@@ -160,8 +176,10 @@
 	<section class="section is-medium has-background-info-dark" id="contact">
 		<div class="section-heading has-text-centered">
 			<h2 class="title is-3">Contact</h2>
+
 			<!-- Tiles -->
 			<div class="tile is-ancestor">
+
 				<!-- Email Tile -->
 				<div class="tile is-parent">
 					<div class="tile is-child notification is-danger">
@@ -174,6 +192,7 @@
 						</p>
 					</div>
 				</div>
+
 				<!-- LinkedIn Tile -->
 				<div class="tile is-parent">
 					<div class="tile is-child notification is-danger">
@@ -186,6 +205,7 @@
 						</p>
 					</div>
 				</div>
+
 				<!-- Github Tile -->
 				<div class="tile is-parent">
 					<div class="tile is-child notification is-danger">
