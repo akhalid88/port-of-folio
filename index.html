@@ -15,10 +15,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Javascript -->
-	<script async src="script.js" type="text/javascript"></script>
+	<script src="script.js"></script>
 
 	<!-- CSS -->
-	<script src="style.css"></script>
+	<link rel="stylesheet" href="assets/style.css">
 
 	<!-- Favicon -->
 	<link rel="icon" href="assets/favicon.ico" type="image/png" />
@@ -60,32 +60,85 @@
 	<!-- About -->
 	<section class="section is-medium" id="about">
 		<div class="section-heading has-text-centered">
-			<h2 class="title is-3">About Me</h2>
+			<h2 class="title is-3 mb-6">About Me</h2>
 			<div class="container">
-				<p class="block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-					printer took a galley of type and scrambled it to make a type specimen book.
-				</p>
-				<p class="block">It has survived not only five centuries, but also the leap into electronic typesetting,
-					remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-					containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum.
-				</p>
-			</div>
-			<div class="level">
-				<div class="level-item level-left">
-					<figure class="image">
-						<img src="assets/profile2.png">
-					</figure>
-				</div>
-				<div class="level-item level-right">
-					<div class="panel">
-						<p class="panel-heading">Competencies</p>
-						<p class="panel-block">HTML</p>
-						<p class="panel-block">Bulma CSS</p>
-						<p class="panel-block">Javascript</p>
-						<p class="panel-block">jQuery</p>
-						<p class="panel-block">Web APIs</p>
+
+				<!-- Picture -->
+				<div class="columns mt-6">
+					<div class="column mx-3">
+						<div class="card">
+							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-rounded is-3by4">
+										<img src="assets/profile2.png" alt="about me">
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Content -->
+					<div class="column mx-3">
+						<div class="card">
+							<div class="card-content">
+								<div class="subtitle">
+									<p class="block">My name is Muhammad. I am an aspiring web developer residing in California's Bay
+										Area. I build websites and apps for the modern world.
+									</p>
+									<p class="block">I've been working in tech support most of my life and one day realized I didn't love
+										it, so I decided it was time to change tracks and now I'm here making amazing sites and apps and
+										having fun all the while.
+									</p>
+									<p class="block"> </p>
+								</div>
+								<br><br>
+
+								<!-- Competencies -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Skill/Tool</th>
+											<th class="" id="progressBar">Competency</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>HTML</th>
+											<td><progress class="progress is-primary" value="90" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>Javascript</th>
+											<td><progress class="progress is-primary" value="80" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>jQuery</th>
+											<td><progress class="progress is-primary" value="75" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>Bulma CSS</th>
+											<td><progress class="progress is-primary" value="75" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>Web APIs</th>
+											<td><progress class="progress is-warning" value="50" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>Bootstrap</th>
+											<td><progress class="progress is-warning" value="40" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>Node JS</th>
+											<td><progress class="progress is-danger" value="25" max="100"></progress></td>
+										</tr>
+										<tr>
+											<th>OOP</th>
+											<td><progress class="progress is-danger" value="25" max="100"></progress></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -95,62 +148,94 @@
 	<!-- Portfolio -->
 	<section class="section is-medium has-background-info-dark" id="portfolio">
 		<div class="section-heading has-text-centered">
-			<h2 class="title is-3">Portfolio</h2>
 			<div class="container">
-				<div class="tile is-ancestor">
+				<h2 class="title is-3 has-text-white mb-6">Portfolio</h2>
+				<div class="columns mt-6">
 
-					<!-- Card 1 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/c19tracker.png" alt="covid19 tracker">
-								</figure>
-							</div>
+					<!-- Portfolio #1 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/c19tracker.png" alt="covid19 tracker">
+									</figure>
+								</div>
 								<p class="subtitle">COVID-19 Tracker</p>
-								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
-									mauris.
+								<p class="content">Get data on COVID-19 for a given state and nearby testing locations. Utilizes Web
+									APIs, ChartJS, Bulma CSS, and teamwork.</p>
+							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/COVID-19-Tracker" target="_blank">View on GitHub</a>
+									</span>
 								</p>
-							</div>
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/COVID-19-Tracker" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
+					</div>
 
-					<!-- Card 2 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/weatherdash.png" alt="weather dashboard">
-								</figure>
-							</div>
+					<!-- Portfolio #2 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/weatherdash.png" alt="weather dashboard">
+									</figure>
+								</div>
 								<p class="subtitle">Weather Dashboard</p>
-								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
-									mauris.
+								<p class="content">Search weather conditions for your location. Includes 5-day forecast. Utilizes Web
+									APIs, dynamic HTML generation, and local storage.</p>
+							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/weather-forecast" target="_blank">View on GitHub</a>
+									</span>
 								</p>
-							</div>
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/weather-forecast" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
+					</div>
 
-					<!-- Card 3 -->
-					<article class="tile is-parent">
-						<div class="tile is-child card has-background-success">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="assets/pwgen.png" alt="password generator">
-								</figure>
-							</div>
+					<!-- Portfolio #3 -->
+					<div class="column">
+						<div class="card">
 							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/pwgen.png" alt="password generator">
+									</figure>
+								</div>
 								<p class="subtitle">Password Generator</p>
-								<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
-									mauris.
-								</p>
+								<p class="content">Select criteria and create secure password. Utilizes Javascript.<br><br> </p>
 							</div>
+							<footer class="card-footer">
+								<p class="card-footer-item">
+									<span>
+										<a href="https://github.com/akhalid88/secure-password-generator" target="_blank">View on GitHub</a>
+									</span>
+								</p>
+								<p class="card-footer-item">
+									<span>
+										<a href="https://akhalid88.github.io/secure-password-generator" target="_blank">View Site</a>
+									</span>
+								</p>
+							</footer>
 						</div>
-					</article>
-
+					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -159,68 +244,88 @@
 	<section class="section is-medium" id="resume">
 		<div class="section-heading has-text-centered">
 			<h2 class="title is-3">Resume</h2>
+			<p class="subtitle mb-3">Get all the details</p>
+			<br>
+			<br>
 
-			<!-- Download button -->
-			<a href="assets/Muhammad_A_Khalid_resume.pdf" download>
-				<button class="button is-success is-large is-rounded">
-					<span class="icon">
-						<i class="fas fa-file-pdf"></i>
-					</span>
-					<span>Download resume</span>
-				</button>
+			<!-- Download Button -->
+			<a href="assets/MuhammadAKhalid-resume.pdf" class="button is-success is-large is-rounded" role="button" download>
+				<span class="icon">
+					<i class="fas fa-file-pdf"></i>
+				</span>
+				<span>Download resume</span>
 			</a>
+
 		</div>
 	</section>
 
 	<!-- Contact -->
 	<section class="section is-medium has-background-info-dark" id="contact">
 		<div class="section-heading has-text-centered">
-			<h2 class="title is-3">Contact</h2>
+			<h2 class="title is-3 mb-6 has-text-white">Contact</h2>
 
-			<!-- Tiles -->
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor mt-6">
 
-				<!-- Email Tile -->
+				<!-- Email Button -->
 				<div class="tile is-parent">
-					<div class="tile is-child notification is-danger">
-						<p class="subtitle">
+					<div class="tile is-child">
+						<a href="mailto:akhalid.code@gmail.com" class="button is-large has-background-link-light" role="button">
 							<span class="icon">
 								<i class="far fa-envelope"></i>
 							</span>
-							Email:
-							<a>akhalid.code@gmail.com</a>
-						</p>
+							<span>Email</span>
+						</a>
 					</div>
 				</div>
 
-				<!-- LinkedIn Tile -->
+				<!-- LinkedIn Button -->
 				<div class="tile is-parent">
-					<div class="tile is-child notification is-danger">
-						<p class="subtitle">
+					<div class="tile is-child">
+						<a href="https://www.linkedin.com/in/abdullahkhalid/" class="button is-large has-background-link-light"
+							role="button">
 							<span class="icon">
 								<i class="fab fa-linkedin"></i>
 							</span>
-							LinkedIn:
-							<a href="https://www.linkedin.com/in/abdullahkhalid/">abdullahkhalid</a>
-						</p>
+							<span>LinkedIn</span>
+						</a>
 					</div>
 				</div>
 
-				<!-- Github Tile -->
+				<!-- Github Button -->
 				<div class="tile is-parent">
-					<div class="tile is-child notification is-danger">
-						<p class="subtitle">
+					<div class="tile is-child">
+						<a href="https://github.com/akhalid88" class="button is-large has-background-link-light" role="button">
 							<span class="icon">
 								<i class="fab fa-github"></i>
 							</span>
-							GitHub:
-							<a href="https://github.com/akhalid88">akhalid88</a>
-						</p>
+							<span>GitHub</span>
+						</a>
 					</div>
 				</div>
+
+				<!-- Blog button -->
+				<div class="tile is-parent">
+					<div class="tile is-child">
+						<a href="https://akhalid-code.medium.com/" class="button is-large has-background-link-light" role="button">
+							<span class="icon">
+								<i class="fas fa-blog"></i>
+							</span>
+							<span>Medium</span>
+						</a>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				Portfolio by Muhammad Abdullah Khalid.
+			</p>
+		</div>
+	</footer>
 </body>
 
 </html>
